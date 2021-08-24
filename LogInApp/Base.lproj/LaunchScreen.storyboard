@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LogInApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jBM-71-9hb">
-                                <rect key="frame" x="124.5" y="427" width="165" height="42"/>
+                                <rect key="frame" x="123" y="424.5" width="168.5" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
                                 <color key="textColor" systemColor="systemGray5Color"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="4" height="5"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jBM-71-9hb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1BL-SN-HSN"/>
-                            <constraint firstItem="jBM-71-9hb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124.5" id="U9V-io-AGc"/>
                             <constraint firstItem="jBM-71-9hb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xvw-25-cG0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jBM-71-9hb" secondAttribute="trailing" constant="124.5" id="dse-6g-c0s"/>
                         </constraints>
                     </view>
                 </viewController>
