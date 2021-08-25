@@ -17,8 +17,5 @@ class LoggedInViewController: UIViewController {
         logInLabel.text = "Welcome, " + userName + "!"
         
     }
-    
-
-  
 
 }
