@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITextFieldDelegate {
     let correctUserName = "User", correctPassword = "Password"
     
     @IBOutlet var userNameTF: UITextField!
@@ -17,11 +17,10 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameTF.layer.cornerRadius = 10
-        passwordTF.layer.cornerRadius = 10
         userNameTF.returnKeyType = UIReturnKeyType.next
         passwordTF.returnKeyType = UIReturnKeyType.done
         passwordTF.enablesReturnKeyAutomatically = true
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,7 +40,7 @@ class MainViewController: UIViewController {
     @IBAction func userNameHintButtonPressed() {
         showAlert(title: "Oops!", message: "Your username is \(correctUserName)")
     }
-    @IBAction func passswordHintButtonPressed() {
+    @IBAction func passwordHintButtonPressed() {
         showAlert(title: "Oops!", message: "Your password is \(correctPassword)")
     }
     private func showAlert(title: String, message: String) {
@@ -50,5 +49,16 @@ class MainViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      if textField == userNameTF {
+         textField.resignFirstResponder()
+         passwordTF.becomeFirstResponder()
+      } else if textField == passwordTF {
+         textField.resignFirstResponder()
+      }
+     return true
+    }
+    
 }
 

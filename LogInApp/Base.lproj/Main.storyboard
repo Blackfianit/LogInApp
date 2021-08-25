@@ -55,14 +55,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Forgot Password?"/>
                                         <connections>
-                                            <action selector="passswordHintButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rff-wa-sTt"/>
+                                            <action selector="passwordHintButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rff-wa-sTt"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.86212868760000005" blue="0.8515499889" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.72849036901363773" green="1" blue="0.98310653021605732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cUG-mz-Xy3" firstAttribute="top" secondItem="OQO-qJ-AMH" secondAttribute="bottom" constant="24" id="5s3-5v-2ac"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fXe-Xx-UxE" secondAttribute="trailing" constant="60" id="JVw-wO-mpO"/>
@@ -74,9 +74,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordHintButton" destination="dGq-kD-aj7" id="fqJ-ma-wcC"/>
                         <outlet property="passwordTF" destination="Uv4-RZ-55x" id="OCJ-DY-VPM"/>
-                        <outlet property="userNameHintButton" destination="0gT-G4-Igb" id="mRf-Ql-ZVN"/>
                         <outlet property="userNameTF" destination="vsE-cN-cAF" id="bpf-dK-tlc"/>
                     </connections>
                 </viewController>
@@ -107,7 +105,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uCU-bE-r3a"/>
-                        <color key="backgroundColor" red="1" green="0.86212868758411221" blue="0.85154998894326084" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.72849036899999997" green="1" blue="0.98310653020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="k66-YK-xEk" firstAttribute="centerX" secondItem="Wuk-ex-trr" secondAttribute="centerX" id="J6a-Ej-tba"/>
                             <constraint firstItem="k66-YK-xEk" firstAttribute="top" secondItem="uCU-bE-r3a" secondAttribute="top" constant="153" id="YTc-iw-Hj6"/>
