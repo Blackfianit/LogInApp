@@ -8,17 +8,10 @@
 import UIKit
 
 class LoggedInViewController: UIViewController {
-    var userName: String!
-    
-    @IBOutlet var logInLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        logInLabel.text = "Welcome, " + userName + "!"
-        
+
     }
     
-
-  
-
 }
