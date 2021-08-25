@@ -20,6 +20,9 @@
                                 <rect key="frame" x="187" y="445" width="54" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <segue destination="Sa8-fY-NdM" kind="presentation" modalPresentationStyle="fullScreen" id="UmH-vd-sKA"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-Xx-UxE">
                                 <rect key="frame" x="60" y="317" width="308" height="102"/>
@@ -69,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="20" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--Logged In View Controller-->
         <scene sceneID="uFe-Q4-d01">
             <objects>
-                <viewController id="Sa8-fY-NdM" sceneMemberID="viewController">
+                <viewController id="Sa8-fY-NdM" customClass="LoggedInViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wuk-ex-trr">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +101,7 @@
                             <constraint firstItem="atc-ZZ-Tus" firstAttribute="centerX" secondItem="Wuk-ex-trr" secondAttribute="centerX" id="np6-aw-df7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pvC-Ta-IrP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2Q-6j-2Xf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
