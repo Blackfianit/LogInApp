@@ -10,7 +10,6 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
@@ -78,6 +77,7 @@
                         <outlet property="userNameTF" destination="vsE-cN-cAF" id="bpf-dK-tlc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="76"/>
         </scene>
@@ -103,14 +103,22 @@
                                     <segue destination="2Of-9H-O6J" kind="unwind" unwindAction="unwindFor:" id="TBo-FK-pU4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW1-TX-ytE">
+                                <rect key="frame" x="184.66666666666666" y="286" width="59" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uCU-bE-r3a"/>
                         <color key="backgroundColor" red="0.72849036899999997" green="1" blue="0.98310653020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="iW1-TX-ytE" firstAttribute="top" secondItem="k66-YK-xEk" secondAttribute="bottom" constant="53" id="GsU-1C-JF8"/>
                             <constraint firstItem="k66-YK-xEk" firstAttribute="centerX" secondItem="Wuk-ex-trr" secondAttribute="centerX" id="J6a-Ej-tba"/>
                             <constraint firstItem="k66-YK-xEk" firstAttribute="top" secondItem="uCU-bE-r3a" secondAttribute="top" constant="153" id="YTc-iw-Hj6"/>
                             <constraint firstItem="uCU-bE-r3a" firstAttribute="bottom" secondItem="atc-ZZ-Tus" secondAttribute="bottom" constant="151" id="i9H-PP-2LM"/>
                             <constraint firstItem="atc-ZZ-Tus" firstAttribute="centerX" secondItem="Wuk-ex-trr" secondAttribute="centerX" id="np6-aw-df7"/>
+                            <constraint firstItem="iW1-TX-ytE" firstAttribute="centerX" secondItem="Wuk-ex-trr" secondAttribute="centerX" id="uiU-2v-PjQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pvC-Ta-IrP"/>
