@@ -20,7 +20,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="Sa8-fY-NdM" kind="show" id="UmH-vd-sKA"/>
+                                    <segue destination="Sa8-fY-NdM" kind="presentation" modalPresentationStyle="fullScreen" id="cYS-1N-O18"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-Xx-UxE">
@@ -29,7 +29,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vsE-cN-cAF">
                                         <rect key="frame" x="0.0" y="0.0" width="308" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uv4-RZ-55x">
                                         <rect key="frame" x="0.0" y="68" width="308" height="34"/>
@@ -84,7 +84,7 @@
         <!--Logged In View Controller-->
         <scene sceneID="uFe-Q4-d01">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Sa8-fY-NdM" customClass="LoggedInViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Sa8-fY-NdM" customClass="LoggedInViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wuk-ex-trr">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
