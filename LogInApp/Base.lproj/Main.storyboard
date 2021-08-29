@@ -20,7 +20,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="Sa8-fY-NdM" kind="presentation" modalPresentationStyle="fullScreen" id="cYS-1N-O18"/>
+                                    <action selector="LogInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hvs-aD-Q9G"/>
+                                    <segue destination="Sa8-fY-NdM" kind="presentation" identifier="showLoggedInVC" modalPresentationStyle="fullScreen" id="cYS-1N-O18"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-Xx-UxE">

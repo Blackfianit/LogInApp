@@ -17,7 +17,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         userNameTF.returnKeyType = UIReturnKeyType.next
         passwordTF.returnKeyType = UIReturnKeyType.done
         passwordTF.enablesReturnKeyAutomatically = true
-        
+        userNameTF.delegate = self
+        passwordTF.delegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -28,10 +29,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
         loggedInVC.userName = userNameTF.text
-        alertShow()
     }
     
-    func alertShow() {
+    @IBAction func LogInPressed() {
         if userNameTF.text != correctUserName || passwordTF.text != correctPassword {
             showAlert(
                 title: "Invalid login or password",
@@ -67,15 +67,16 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-//
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        if textField == userNameTF{
-//            passwordTF.becomeFirstResponder()
-//        } else {
-//            prepare()
-//        }
-//        return true
-//    }
-//
+}
+extension MainViewController {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTF{
+            passwordTF.becomeFirstResponder()
+        } else {
+            LogInPressed()
+            performSegue(withIdentifier: "showLoggedInVC", sender: nil)
+        }
+        return true
+    }
 }
 
