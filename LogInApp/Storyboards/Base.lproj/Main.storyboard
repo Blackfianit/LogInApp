@@ -137,12 +137,26 @@
         <!--About me-->
         <scene sceneID="hqM-MS-Kg3">
             <objects>
-                <viewController id="73C-hC-2Ze" sceneMemberID="viewController">
+                <viewController id="73C-hC-2Ze" customClass="AboutMeViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ch-6S-Cme">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9j-Pq-W1S">
+                                <rect key="frame" x="16" y="136" width="396" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vjX-s9-gJP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S9j-Pq-W1S" firstAttribute="top" secondItem="vjX-s9-gJP" secondAttribute="top" constant="48" id="07F-4x-RVn"/>
+                            <constraint firstItem="S9j-Pq-W1S" firstAttribute="centerX" secondItem="6Ch-6S-Cme" secondAttribute="centerX" id="Sgk-xX-1Vs"/>
+                            <constraint firstItem="S9j-Pq-W1S" firstAttribute="leading" secondItem="vjX-s9-gJP" secondAttribute="leading" constant="16" id="TTz-fn-Q15"/>
+                            <constraint firstItem="vjX-s9-gJP" firstAttribute="trailing" secondItem="S9j-Pq-W1S" secondAttribute="trailing" constant="16" id="gJa-vo-8ve"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About me" id="4Re-7W-JS1"/>
                 </viewController>

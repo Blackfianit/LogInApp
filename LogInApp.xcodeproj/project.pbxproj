@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89CB855B26DC27B6003E82AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CB855A26DC27B6003E82AA /* User.swift */; };
+		89CB855D26DC331E003E82AA /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CB855C26DC331E003E82AA /* AboutMeViewController.swift */; };
 		89CE903626D6509900EEB45A /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE903526D6509900EEB45A /* LoggedInViewController.swift */; };
 		89F9566D26D5861A00F0DF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9566C26D5861A00F0DF02 /* AppDelegate.swift */; };
 		89F9566F26D5861A00F0DF02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9566E26D5861A00F0DF02 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		89CB855A26DC27B6003E82AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89CB855C26DC331E003E82AA /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		89CE903526D6509900EEB45A /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		89F9566926D5861A00F0DF02 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F9566C26D5861A00F0DF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				89F9567026D5861A00F0DF02 /* MainViewController.swift */,
 				89CE903526D6509900EEB45A /* LoggedInViewController.swift */,
+				89CB855C26DC331E003E82AA /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				89F9566D26D5861A00F0DF02 /* AppDelegate.swift in Sources */,
 				89F9566F26D5861A00F0DF02 /* SceneDelegate.swift in Sources */,
 				89CB855B26DC27B6003E82AA /* User.swift in Sources */,
+				89CB855D26DC331E003E82AA /* AboutMeViewController.swift in Sources */,
 				89CE903626D6509900EEB45A /* LoggedInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

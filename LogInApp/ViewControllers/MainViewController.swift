@@ -16,6 +16,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     private let correctUserName = "User"
     private let correctPassword = "Password"
     
+    let user = User.getUser()
+//    let viewControllers = [LoggedInViewController(), AboutMeViewController()]
     // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +29,20 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
-        loggedInVC.userName = userNameTF.text
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        for viewController in viewControllers {
+            if let loggedInVC = viewController as? LoggedInViewController {
+                loggedInVC.userName = user.person.name + " " + user.person.surname
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as? AboutMeViewController
+            }
+        }
     }
     
     // MARK: IB Actions
     @IBAction func LogInPressed() {
-        if userNameTF.text != correctUserName || passwordTF.text != correctPassword {
+        if userNameTF.text != user.userName || passwordTF.text != user.password {
             showAlert(
                 title: "Invalid login or password",
                 message: "Please, enter correct login and password"
