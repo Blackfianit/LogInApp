@@ -8,10 +8,15 @@
 import UIKit
 
 class MainViewController: UIViewController, UITextFieldDelegate {
-    
+    // MARK: IB Outlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
+    // MARK: Private Properties
+    private let correctUserName = "User"
+    private let correctPassword = "Password"
+    
+    // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameTF.returnKeyType = UIReturnKeyType.next
@@ -21,16 +26,12 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         passwordTF.delegate = self
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
         loggedInVC.userName = userNameTF.text
     }
     
+    // MARK: IB Actions
     @IBAction func LogInPressed() {
         if userNameTF.text != correctUserName || passwordTF.text != correctPassword {
             showAlert(
@@ -54,9 +55,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         showAlert(title: "Oops!", message: "Your password is \(correctPassword)")
     }
     
-    private let correctUserName = "User"
-    private let correctPassword = "Password"
-    
+    // MARK: Private Methods
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(
             title: title,
@@ -68,7 +67,13 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true)
     }
 }
+
 extension MainViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTF{
             passwordTF.becomeFirstResponder()

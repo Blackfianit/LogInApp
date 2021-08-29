@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89CB855B26DC27B6003E82AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CB855A26DC27B6003E82AA /* User.swift */; };
 		89CE903626D6509900EEB45A /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CE903526D6509900EEB45A /* LoggedInViewController.swift */; };
 		89F9566D26D5861A00F0DF02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9566C26D5861A00F0DF02 /* AppDelegate.swift */; };
 		89F9566F26D5861A00F0DF02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9566E26D5861A00F0DF02 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89CB855A26DC27B6003E82AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		89CE903526D6509900EEB45A /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		89F9566926D5861A00F0DF02 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F9566C26D5861A00F0DF02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		89CB855926DC2732003E82AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89CB855A26DC27B6003E82AA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		89F9566026D5861A00F0DF02 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				89CB855726DC251C003E82AA /* ViewControllers */,
+				89CB855926DC2732003E82AA /* Models */,
 				89CB855626DC24F2003E82AA /* Storyboards */,
 				89CB855826DC253D003E82AA /* Resources */,
 				89CB855526DC24D1003E82AA /* App */,
@@ -175,6 +186,7 @@
 				89F9567126D5861A00F0DF02 /* MainViewController.swift in Sources */,
 				89F9566D26D5861A00F0DF02 /* AppDelegate.swift in Sources */,
 				89F9566F26D5861A00F0DF02 /* SceneDelegate.swift in Sources */,
+				89CB855B26DC27B6003E82AA /* User.swift in Sources */,
 				89CE903626D6509900EEB45A /* LoggedInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
