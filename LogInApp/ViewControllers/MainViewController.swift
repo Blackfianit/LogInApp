@@ -16,8 +16,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     private let correctUserName = "User"
     private let correctPassword = "Password"
     
-    let user = User.getUser()
-//    let viewControllers = [LoggedInViewController(), AboutMeViewController()]
+    private let user = User.getUser()
+    
     // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +33,11 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         guard let viewControllers = tabBarController.viewControllers else { return }
         for viewController in viewControllers {
             if let loggedInVC = viewController as? LoggedInViewController {
-                loggedInVC.userName = user.person.name + " " + user.person.surname
+                loggedInVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
-                let aboutUserVC = navigationVC.topViewController as? AboutMeViewController
+                guard let aboutUserVC = navigationVC.topViewController as? AboutMeViewController
+                else { return }
+                aboutUserVC.user = user
             }
         }
     }

@@ -20,16 +20,8 @@ struct User {
                 aboutInfo: Information(
                     height: 188,
                     weight: 75,
-                    interests: [
-                        Hobby(
-                            title: "Piano playing",
-                            achievments: "Wrote music for short film"
-                        ),
-                        Hobby(
-                            title: "iOS development",
-                            achievments: "Started learning swiftbook course"
-                        )
-                    ]
+                    interests: "Piano playing, composition, iOS development",
+                    achievments: "Won composition contest; made 3 apps on swift."
                 )
             )
         )
@@ -44,10 +36,6 @@ struct Person {
 struct Information {
     let height: Int
     let weight: Int
-    let interests: [Hobby]
-}
-
-struct Hobby {
-    let title: String
+    let interests: String
     let achievments: String
 }
