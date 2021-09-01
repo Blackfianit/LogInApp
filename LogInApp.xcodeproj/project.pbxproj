@@ -67,6 +67,7 @@
 		89CB855726DC251C003E82AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8986BACC26DF7611007E4C1E /* AchievementsViewController.swift */,
 				89F9567026D5861A00F0DF02 /* MainViewController.swift */,
 				89CE903526D6509900EEB45A /* LoggedInViewController.swift */,
 				89CB855C26DC331E003E82AA /* AboutMeViewController.swift */,
@@ -93,7 +94,6 @@
 		89F9566026D5861A00F0DF02 = {
 			isa = PBXGroup;
 			children = (
-				8986BACC26DF7611007E4C1E /* AchievementsViewController.swift */,
 				89F9566B26D5861A00F0DF02 /* LogInApp */,
 				89F9566A26D5861A00F0DF02 /* Products */,
 			);

@@ -21,7 +21,8 @@ struct User {
                     height: 188,
                     weight: 75,
                     interests: "Piano playing, composition, iOS development",
-                    achievments: "Won composition contest; made 3 apps on swift."
+                    achievments: "Won a composition contest; made 3 apps on swift.",
+                    image: "Selfie"
                 )
             )
         )
@@ -38,4 +39,5 @@ struct Information {
     let weight: Int
     let interests: String
     let achievments: String
+    let image: String
 }
